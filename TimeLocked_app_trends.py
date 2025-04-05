@@ -58,7 +58,7 @@ top_categories.rename(columns={"Reviews": "Total Reviews", "Rating": "Average Ra
 # **Check if we are in the correct time window (3PM-5PM IST)**
 india_tz = pytz.timezone("Asia/Kolkata")
 current_time = datetime.now(india_tz).time()
-show_graph = 17 <= current_time.hour < 19
+show_graph = 15 <= current_time.hour < 17
 
 if show_graph:
     # **Create Grouped Bar Chart using Plotly**
